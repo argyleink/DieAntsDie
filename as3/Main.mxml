@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application   xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+				 backgroundColor="#FFFFFF" splashScreenImage="@Embed(source='loading.jpg')"
+				 applicationComplete="applicationCompleteHandler(event)" frameRate="45">
+	<fx:Script>
+		<![CDATA[
+			
+			import storage.SQL_Database;
+			import DieAntsDie;
+			
+			import mx.events.FlexEvent;
+			import mx.managers.SystemManager;
+			
+			private var game:DieAntsDie;
+			private var db:SQL_Database = new SQL_Database();
+			
+			protected function applicationCompleteHandler(event:FlexEvent):void {
+				game = new DieAntsDie(systemManager.stage,db);				
+				db.sqlInit(game);
+			}
+			
+		]]>
+	</fx:Script>
+</s:Application>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<qnx>
+   <initialWindow>
+      <aspectRatio>landscape</aspectRatio>
+   </initialWindow>
+
+   <icon>
+      <image>icon/Default.png</image>
+   </icon>
+
+   <splashscreen>landscape.jpg:portrait.jpg</splashscreen>
+   <author>ArgyleInk</author>
+   <authorId>gYAAgDF4RgGWhRUvbSczgoRMia0</authorId>
+   <category>core.games</category>
+   <action/>
+   <buildId>4</buildId>
+   <platformVersion>1.0.6.0</platformVersion>
+</qnx>
